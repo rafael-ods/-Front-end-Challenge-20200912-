@@ -1,0 +1,78 @@
+.ct-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.info-list {
+    display: flex;
+    align-items: center;
+    margin: 32px 0 40px 0;
+}
+
+.info__icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.modulo {
+    background: url('../../img/icon-modulo.png') center / cover no-repeat;
+}
+
+.views {
+    background: url('../../img/icon-views.png')center / cover no-repeat;
+    ;
+}
+
+.info__description {
+    color: var(--color-branco);
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin-left: 16px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .modulo {
+        background: url('../../img/mobile/icon-responsive.png')center / cover no-repeat;
+        width: 48px;
+        height: 48px;
+    }
+
+    .views {
+        background: url('../../img/mobile/icon-medal-alt.png')center / cover no-repeat;
+        width: 48px;
+        height: 48px;
+    }
+
+    .info__description {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ct-info {
+        margin-top: 15px;
+        justify-content: space-evenly;
+    }
+
+    .info-list {
+        flex-direction: column;
+    }
+
+    .info__description {
+        margin: 8px 0;
+    }
+
+    .btn-info {
+        order: -1;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

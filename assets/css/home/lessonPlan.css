@@ -1,0 +1,79 @@
+.lesson-plan__title {
+    color: var(--color-cinza-claro);
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 40px 0 19px 0;
+}
+
+.ct-plan {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color-secundario);
+    border-radius: 4px;
+    padding: 19px 32px;
+}
+
+.card-plan {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #D8D7CE;
+    margin-top: 24px;
+}
+
+.card__number {
+    color: var(--color-cinza);
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.card-context {
+    margin-left: 16px;
+}
+
+.card-context__title {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.card-context__description {
+    color: var(--color-cinza);
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    margin-bottom: 26px;
+    padding-right: 150px;
+}
+
+.card-filter {
+    background: linear-gradient(360deg, #F6F4EF 38.89%, rgba(246, 244, 239, 0.5) 100%);
+    opacity: 0.7;
+}
+
+.btn-plan {
+    color: var(--color-preto) !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    background-color: transparent !important;
+    border: 2px solid var(--color-preto) !important;
+    margin: 0 auto !important;
+    width: 180px !important;
+}
+
+@media screen and (max-width: 500px) {
+    .card-context__title {
+        font-size: 20px;
+    }
+
+    .card__number {
+        font-size: 25px;
+    }
+    .card-context__description {
+        padding-right: 0px;
+    }
+}

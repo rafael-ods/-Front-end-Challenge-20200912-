@@ -1,0 +1,120 @@
+.box-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-content__title {
+    color: var(--color-cinza-claro);
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 40px 0 32px 0;
+}
+
+.box-content__title-mobile {
+    display: none;
+}
+
+.btn-mobile {
+    display: none !important;
+}
+
+.ct-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 46px;
+    text-align: center;
+}
+
+.content-list__icon {
+    display: inline-block;
+    width: 74px;
+    height: 74px;
+}
+
+.book {
+    background: url('../../img/book-outline.png')center / cover no-repeat;
+}
+
+.video {
+    background: url('../../img/360.png') center / cover no-repeat;
+}
+
+.test {
+    background: url('../../img/tests.png')center / cover no-repeat;
+}
+
+.task {
+    background: url('../../img/tasks.png')center / cover no-repeat;
+}
+
+.content-list__description {
+    color: var(--color-branco);
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+}
+
+@media screen and (max-width: 1024px) {
+    img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    img {
+        display: none;
+    }
+
+    .box-content__title {
+        display: none;
+    }
+
+    .box-content__title-mobile {
+        display: block;
+        color: var(--color-branco);
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 237px;
+        margin-bottom: 36px;
+
+    }
+
+    .btn-mobile {
+        display: block !important;
+        text-align: center !important;
+        background-color: transparent !important;
+        border: 2px solid var(--color-cinza-claro) !important;
+    }
+
+    .ct-list {
+        margin-top: 24px;
+        column-gap: 24px;
+    }
+
+    .content-list__icon {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 5px;
+    }
+
+    .content-list__description {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .btn-desktop {
+        display: none !important;
+    }
+}

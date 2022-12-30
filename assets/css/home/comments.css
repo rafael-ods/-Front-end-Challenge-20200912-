@@ -1,0 +1,177 @@
+.comments__title {
+    color: var(--color-cinza-claro);
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 40px 0 16px 0;
+}
+
+.comments__description {
+    color: var(--color-amarelo);
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.comments__description b {
+    color: var(--color-cinza);
+}
+
+.comments__description::before {
+    content: '';
+    background: url('../../img/like-Yellow.png') center / cover no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.card-comments {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--color-cinza);
+    width: 752px;
+    margin: 0 auto;
+}
+
+.card-comments__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-color);
+    border-radius: 50%;
+    background-color: var(--color-cinza);
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 80px;
+    height: 80px;
+    margin-top: 24px;
+}
+
+.card-comments__user {
+    color: var(--color-cinza-claro);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 24px 0 12px 16px;
+}
+
+.card-comments__user span {
+    color: var(--color-cinza);
+}
+
+.card-comments__user span::before {
+    content: '';
+    background: url('../../img/like.png') center / cover no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 8px 0 20px;
+}
+
+.card-comments__description {
+    color: var(--color-cinza-claro);
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 24px 16px;
+}
+
+.card-comments__description+span {
+    display: inherit;
+    border-top: 1px solid var(--color-cinza);
+    opacity: 0.5;
+}
+
+.card-comments__description-secondary {
+    color: var(--color-cinza);
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 16px;
+    padding-top: 11px;
+
+}
+
+.card-comments__description-secondary+span {
+    color: var(--color-amarelo);
+    display: inline-block;
+    margin: 9px 0 27px 16px;
+}
+
+.card-comments__description-secondary+span b {
+    color: var(--color-cinza);
+}
+
+.card-comments__description-secondary+span::before {
+    content: '';
+    background: url('../../img/checkmark-circle-2-outline.png') center / cover no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.img-ana {
+    background: url('../../img/image\ \(1\).png') center / cover no-repeat;
+}
+
+.card-comments__profesor {
+    color: var(--color-branco) !important;
+}
+
+.card-comments__profesor span {
+    color: var(--color-amarelo);
+}
+
+.card-comments__profesor span::before {
+    content: '';
+    display: inline-block;
+    background: url('../../img/bullet.png') center / cover no-repeat;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.card-comments:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.btn-comments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  0 auto;
+    
+    color: var(--color-cinza-claro);
+    border: 2px solid var(--color-cinza-claro);
+    border-radius: 4px;
+    
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 8px;
+    width: 180px;
+    
+    
+}
+
+@media screen and (max-width: 500px) {
+    .comments__title {
+        color: var(--color-branco);
+        font-size: 20px;
+    }
+
+    .card-comments {
+        width: auto;
+    }
+}

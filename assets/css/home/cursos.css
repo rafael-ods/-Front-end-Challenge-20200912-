@@ -1,0 +1,91 @@
+.cursos__title {
+    color: var(--color-cinza-claro);
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 41px 0 19px 0;
+}
+
+.ct-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+.cursos-card {
+    position: relative;
+    opacity: 0.5;
+}
+
+.cursos-card:hover {
+    cursor: pointer;
+    position: relative;
+    opacity: 10;
+}
+
+.cursos-card__img {
+    display: inline-block;
+    width: 368px;
+    height: 188px;
+}
+
+.img-marcus {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, rgba(0, 0, 0, 0.9) 100%), url('../../img/Foto.png') center / cover no-repeat;
+
+}
+
+.img-ismael {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, rgba(0, 0, 0, 0.9) 100%), url('../../img/Foto\ \(1\).png') center / cover no-repeat;
+}
+
+.img-lewis {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, rgba(0, 0, 0, 0.9) 100%), url('../../img/Foto\ \(2\).png') center / cover no-repeat;
+}
+
+.cursos-card__title {
+    color: var(--color-branco);
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 8px;
+    top: 136px;
+}
+
+.cursos-card__description {
+    color: var(--color-cinza-claro);
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.cursos-card__description b {
+    color: var(--color-cinza);
+}
+
+@media screen and (max-width: 1024px) {
+    .ct-cards {
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cursos__title {
+        color: var(--color-branco);
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .cursos-card__img {
+        width: 304px;
+    }
+    
+}

@@ -1,0 +1,65 @@
+@import url('./home/header.css');
+@import url('./home/banner.css');
+@import url('./home/info.css');
+@import url('./home/profession.css');
+@import url('./home/lessonPlan.css');
+@import url('./home/cursos.css');
+@import url('./home/information.css');
+@import url('./home/comments.css');
+@import url('./home/articles.css');
+@import url('./home/blog.css');
+@import url('./home/foorter.css');
+
+:root {
+    --bg-color: #000000;
+    --bg-color-secundario: #F6F4EF;
+    --color-cinza: #858479;
+    --color-cinza-claro: #D8D7CE;
+    --color-branco: #FFFFFF;
+    --color-amarelo: #C5AF19;
+    --color-preto: #1D1A05;
+    --fonte-principal: 'Lato', sans-serif;
+
+}
+
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+}
+
+
+.container {
+    max-width: 1136px;
+    padding: 0 8px;
+    margin: 0 auto;
+}
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-branco);
+    cursor: pointer;
+    background-color: var(--color-amarelo);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 368px;
+    padding: 12px 0;
+    border: none;
+}
+
+@media screen and (max-width: 500px) {
+    .btn {
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
